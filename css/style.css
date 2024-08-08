@@ -203,6 +203,7 @@ nav ul.links li:hover a::after {
 }
 
 .slogan .right h1 {
+    width: 50%;
     color: var(--white-1);
     font-size: 35px;
     margin-bottom: 20px;
