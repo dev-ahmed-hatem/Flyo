@@ -10,6 +10,7 @@
     --white-1: #f6f9fe;
     --white-2: #cbd1de;
     --gray: #c1c1c1;
+    --light-blue: #42b0d1;
     --bg-1: #1c2230;
     --bg-2: #181e2a;
     --bg-3: #0c1524;
@@ -25,6 +26,22 @@ body {
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 /* globals end */
+
+/* scrollbar styling start */
+*::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bg-3);
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--white-1);
+}
+/* scrollbar styling end */
 
 /* navbar start */
 nav {
@@ -118,7 +135,7 @@ nav ul.links li:hover a::after {
     width: 250px;
     height: 55px;
     border-radius: 60px;
-    background-color: #42b0d1;
+    background-color: var(--light-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,12 +143,12 @@ nav ul.links li:hover a::after {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    border: 3px solid #42b0d1;
+    border: 3px solid var(--light-blue);
 }
 
 .hero .btn:hover {
     background-color: var(--bg-2);
-    color: #42b0d1;
+    color: var(--light-blue);
 }
 /* hero section end */
 
@@ -203,7 +220,7 @@ nav ul.links li:hover a::after {
 
 .slogan .right .link {
     font-size: 15px;
-    color: #42b0d1;
+    color: var(--light-blue);
     text-decoration: underline;
     display: inline-block;
     margin-top: 20px;
@@ -318,14 +335,14 @@ nav ul.links li:hover a::after {
     width: 250px;
     height: 50px;
     border-radius: 60px;
-    background-color: #42b0d1;
+    background-color: var(--light-blue);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white-1);
     font-size: 17px;
     cursor: pointer;
-    border: 3px solid #42b0d1;
+    border: 3px solid var(--light-blue);
 }
 /* contact section end */
 
@@ -346,7 +363,7 @@ footer .sep {
 footer .columns {
     display: flex;
     justify-content: space-between;
-    color: var(--white-1);
+    color: var(--gray);
 }
 
 footer .columns .column span {
@@ -359,7 +376,7 @@ footer .columns .column img {
 }
 
 footer .columns .column span a {
-    color: var(--white-1);
+    color: var(--gray);
     text-decoration: none;
     display: inline-block;
     width: 100%;
@@ -384,7 +401,7 @@ footer .columns .social {
 footer .columns .social img {
     width: 35px;
     height: 35px;
-    border: 1px solid var(--white-1);
+    border: 1px solid var(--gray);
     border-radius: 50%;
     padding: 7px;
     cursor: pointer;
@@ -403,5 +420,5 @@ footer .columns .social img {
 }
 .credits .attribution a {
     font-weight: bold;
-    color: #42b0d1;
+    color: var(--light-blue);
 }
