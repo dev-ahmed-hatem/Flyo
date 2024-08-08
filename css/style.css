@@ -83,6 +83,11 @@ nav ul.links li:hover a::after {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 200px;
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
 }
 
 .hero *:not(:last-child) {
@@ -125,5 +130,42 @@ nav ul.links li:hover a::after {
     background-color: var(--bg-2);
     color: #42b0d1;
 }
-
 /* hero section end */
+
+/* features section start */
+.features {
+    background-color: var(--bg-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 20%;
+}
+
+.features .feature {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.features .feature .icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.features .feature h3 {
+    color: var(--white-1);
+    font-weight: light;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.features .feature p {
+    color: var(--white-2);
+    font-size: 14px;
+}
+
+/* features section end */
