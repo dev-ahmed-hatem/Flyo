@@ -1,0 +1,129 @@
+/* globals start */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+:root {
+    --white-1: #f6f9fe;
+    --white-2: #cbd1de;
+    --gray: #c1c1c1;
+    --bg-1: #1c2230;
+    --bg-2: #181e2a;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--bg-1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* globals end */
+
+/* navbar start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+nav .logo img {
+    width: 140px;
+}
+
+nav ul.links {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul.links li {
+    margin-right: 20px;
+}
+
+nav ul.links li a {
+    text-decoration: none;
+    color: var(--gray);
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 17px;
+}
+
+nav ul.links li:hover a {
+    color: var(--white-1);
+}
+
+nav ul.links li a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 120%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--white-1);
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul.links li:hover a::after {
+    width: 100%;
+}
+/* navbar end */
+
+/* hero section start */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero *:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 35%;
+}
+
+.hero h1 {
+    color: var(--white-1);
+    font-size: 40px;
+    width: 50%;
+}
+
+.hero p {
+    color: var(--white-2);
+    font-size: 20px;
+    width: 37%;
+    font-weight: light;
+}
+
+.hero .btn {
+    width: 250px;
+    height: 55px;
+    border-radius: 60px;
+    background-color: #42b0d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-1);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid #42b0d1;
+}
+
+.hero .btn:hover {
+    background-color: var(--bg-2);
+    color: #42b0d1;
+}
+
+/* hero section end */
